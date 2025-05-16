@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #1f1f1f;
-    overflow: hidden;
+    height: 10000px;
 }
 
 
@@ -62,6 +62,7 @@ a {
     position: fixed;
     width: 17%;
     height: 90vh;
+    z-index: 1000;
 }
 
 .logo{
@@ -286,21 +287,205 @@ nav{
 
 .content {
     grid-area: content;
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 38px;
     color: white;
-    margin-top: 54px; /* เพื่อหลีก navbar */
+    margin-top: 54px;/* หนี navbar */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* overflow: scroll;
+    scrollbar-color: #ababab #2c2c2c ; */
+    
 }
+
+/* content1 */
+
+.content-header{
+    color: #ededed;
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 0.5%;
+    border-bottom: #363636 1px solid;
+    margin-bottom: 0;
+}
+
+.content1{
+    display: flex;
+    margin-bottom: 0.5%;
+    gap: 1.5%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    margin-bottom: 2%;
+}
+
+
+.content1-1 div{
+    width: 580px;
+    height: 344px;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
+    url(/img/Alist.webp) center/cover no-repeat;
+}
+
+/* .content1-1 div:hover{
+    background: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)),
+    url(/img/Alist.webp) center/cover no-repeat;
+} */
+
+.content1-1 div p{
+    margin-left: 3%;
+    font-size: 80%;
+    color: white;
+    font-weight: 500;
+}
+
+.content1-1 .p1{
+    font-size: 70%;
+    font-weight: 700;
+    color: #ababab;
+    margin: 4px 0;
+    margin-top: 2.2%;
+}
+
+.content1-1 .p2{
+    font-size: 110%;
+    font-weight: 500;
+    color: #d9d9d9;
+    margin: 0px 0;
+}
+
+.content1-1 .p3{
+    font-size: 110%;
+    font-weight: 500;
+    color: #ababab;
+    margin: 0px 0;
+    margin-bottom: 3%;
+}
+
+
+.content1-2 div{
+    width: 580px;
+    height: 344px;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
+    url(/img/Fancy.webp) center/cover no-repeat;
+}
+
+/* .content1-2 div:hover{
+    background: linear-gradient(rgba(40, 40, 40, 0.4), rgba(40, 40, 40, 0.4)),
+    url(/img/f1.webp) center/cover no-repeat;
+} */
+
+.content1-2 div p{
+    margin-left: 3%;
+    font-size: 80%;
+    color: white;
+    font-weight: 500;
+}
+
+.content1-2 .tittle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1-2 .tittle div{
+    background-image: url(/img/Fancysmall.webp);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin-right: 3%;
+    margin-bottom: 2.5%;
+    border-radius: 5px;
+}
+
+.content1-2 .p1{
+    font-size: 70%;
+    font-weight: 700;
+    color: #ababab;
+    margin: 4px 0;
+    margin-top: 2%;
+}
+
+.content1-2 .p2{
+    font-size: 110%;
+    font-weight: 500;
+    color: #d9d9d9;
+    margin: 0px 0;
+}
+
+.content1-2 .p3{
+    font-size: 110%;
+    font-weight: 500;
+    color: #ababab;
+    margin: 0px 0;
+    margin-bottom: 3%;
+}
+
+/* content2 */
+
+.content2{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.p-head {
+    color: #d9d9d9;
+    font-weight: 700;
+    font-size: 110%;
+    margin-bottom: 13px;
+}
+
+.content2-contain{
+    display: flex;
+    gap: 20px;
+}
+
+.content-card{
+    width: 220px;
+    height:250px;
+    flex:0 0 auto;
+}
+
+.content-card img{
+    width: 220px;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.content-card p{
+    margin-top: 0;
+}
+
+.content-card .p1{
+    color: #d9d9d9;
+    margin-bottom: 0;
+    font-size: 80%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-card .p2{
+    color: #ababab;
+    font-size: 80%;
+    font-weight: 500;
+}
+
 
 /* ส่วนของ ads */
 
 .ads{
     grid-area: ads;
-    position: absolute;
+    position: fixed;
     background: #d60017;
     height: 10vh;
     width: 100%;
     bottom: 0;
-
     display: flex;
     justify-content: space-between;
 }
